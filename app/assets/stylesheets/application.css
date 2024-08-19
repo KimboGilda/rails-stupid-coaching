@@ -1,15 +1,75 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* app/assets/stylesheets/application.css */
+.header {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+label {
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  margin-right: 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: #77aae1;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.response-container {
+  margin-left: 20px;
+}
+
+.question-box,
+.answer-box {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+}
+
+.answer-box {
+  border-left: 4px solid #28a745;
+}
+
+.question-box p,
+.answer-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer-you,
+.footer-coach {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  font-style: italic;
+}
+
+.back-link {
+  margin-left: 20px;
+}

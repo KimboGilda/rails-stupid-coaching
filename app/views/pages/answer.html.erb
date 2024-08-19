@@ -1,7 +1,15 @@
-<h1>Your Question:</h1>
-<p><%= @question %></p>
+<div class="response-container">
+  <div class="question-box">
+    <p><%= @question %></p>
+    <footer class="footer-you">- You</footer>
+  </div>
 
-<h2>Coach's Answer:</h2>
-<p><%= @answer %></p>
+  <div class="answer-box">
+    <p><%= @answer %></p>
+    <footer class="footer-coach">- Your Coach</footer>
+  </div>
+</div>
 
-<%= link_to("Back to Ask page", ask_path) %>
+<div class="back-link">
+  <%= link_to 'Go back to ask again', ask_path, class: 'btn btn-secondary' %>
+</div>
